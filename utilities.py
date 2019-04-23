@@ -57,7 +57,8 @@ def rotation_matrix(angle=90, direction='x' or 'y' or 'z'):
         rot_mat = np.array([[cos_theta, sin_theta, 0], [-1*sin_theta, cos_theta, 0], [0, 0, 1]], dtype='int')
     return rot_mat
 
-def rotate_structure(coords, rot_mat):
+def rotate_structure(coords, angle, direction):
+    rot_mat = rotation_matrix(angle, direction)
     rot_coords = []
     for vector in coords:
         rot_coords.append(np.dot(vector, rot_mat))
