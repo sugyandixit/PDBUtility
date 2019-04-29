@@ -21,4 +21,3 @@ List of functions
 6. mergecoords: merge a set of coordinates
 
 7. calculate_helix_dipole: calculates dipole (ideally used for helix structure) for a segment of pdb giving a start and end residue number and the pdb object (from pdb_read.py)
-
